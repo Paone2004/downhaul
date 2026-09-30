@@ -51,7 +51,7 @@
     "message": "Nascondi"
   },
   "translate_button_tooltip": {
-    "message": "Aiuta a tradurre VDH"
+    "message": "Aiuta a tradurre Downhaul"
   },
   "help_button_tooltip": {
     "message": "Aiuto"
@@ -96,7 +96,7 @@
     "message": "Hai scaricato 100 video!"
   },
   "leave_review_description": {
-    "message": "Ci auguriamo che Video DownloadHelper ti piaccia :) Ti dispiacerebbe scrivere una recensione positiva sul sito web dell'estensione?"
+    "message": "Ci auguriamo che Downhaul ti piaccia :) Ti dispiacerebbe scrivere una recensione positiva sul sito web dell'estensione?"
   },
   "leave_review_button": {
     "message": "Lascia una recensione"
@@ -150,7 +150,7 @@
     "message": "Navigazione anonima"
   },
   "private_browsing_warning": {
-    "message": "Video DownloadHelper non è abilitato in navigazione anonima."
+    "message": "Downhaul non è abilitato in navigazione anonima."
   },
   "private_browsing_notifications": {
     "message": "Mostra una notifica per i download in navigazione anonima"
@@ -231,7 +231,7 @@
     "message": "Accedi ai comandi con clic destro nella pagina"
   },
   "restart_addon": {
-    "message": "Ricarica l'estensione VDH"
+    "message": "Ricarica l'estensione Downhaul"
   },
   "reset_settings": {
     "message": "Ripristina le impostazioni"
@@ -282,7 +282,7 @@
     "message": "Cronologia Download"
   },
   "history_warning": {
-    "message": "Non registriamo la tua cronologia di download. Vuoi che Video DownloadHelper ricordi la tua cronologia di download?"
+    "message": "Non registriamo la tua cronologia di download. Vuoi che Downhaul ricordi la tua cronologia di download?"
   },
   "history_warning_2": {
     "message": "Non ti preoccupare, tutto rimane sul tuo computer. Apprezziamo la tua privacy."

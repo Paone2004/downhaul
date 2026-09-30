@@ -39,7 +39,7 @@
     "message": "Mostrar historial de descargas"
   },
   "translate_button_tooltip": {
-    "message": "Ayudar a traducir VDH"
+    "message": "Ayudar a traducir Downhaul"
   },
   "open_source_tab_button_tooltip": {
     "message": "Abrir pestaña de código"
@@ -75,7 +75,7 @@
     "message": "Cuenta"
   },
   "leave_review_description": {
-    "message": "Hola 🤚 Video DownloadHelper es de uso gratuito. ¿Le importaría dejar una buena reseña? Me sería de gran ayuda 😊."
+    "message": "Hola 🤚 Downhaul es de uso gratuito. ¿Le importaría dejar una buena reseña? Me sería de gran ayuda 😊."
   },
   "leave_review_button": {
     "message": "Dejar una reseña"
@@ -108,7 +108,7 @@
     "message": "Navegación privada"
   },
   "private_browsing_warning": {
-    "message": "Video DownloadHelper no está habilitado en la navegación privada."
+    "message": "Downhaul no está habilitado en la navegación privada."
   },
   "private_browsing_notifications": {
     "message": "Mostrar notificación para descargas privadas"
@@ -177,7 +177,7 @@
     "message": "Historial de descargas"
   },
   "history_warning": {
-    "message": "No registramos su historial de descargas. ¿Desea que Video DownloadHelper recuerde su historial de descargas?"
+    "message": "No registramos su historial de descargas. ¿Desea que Downhaul recuerde su historial de descargas?"
   },
   "history_warning_2": {
     "message": "No se preocupe, todo permanece en su equipo. Valoramos su privacidad."

@@ -51,7 +51,7 @@
     "message": "Skrýt"
   },
   "translate_button_tooltip": {
-    "message": "Pomozte s překladem VDH"
+    "message": "Pomozte s překladem Downhaul"
   },
   "open_source_tab_button_tooltip": {
     "message": "Otevřít záložku se zdrojovým kódem"
@@ -93,7 +93,7 @@
     "message": "Stáhl jste 100 videí!"
   },
   "leave_review_description": {
-    "message": "Jsme rádi, že si užíváte Video DownloadHelper :) Nechtěl byste napsat hezkou recenzi na stránkách obchodu s addony? "
+    "message": "Jsme rádi, že si užíváte Downhaul :) Nechtěl byste napsat hezkou recenzi na stránkách obchodu s addony? "
   },
   "leave_review_button": {
     "message": "Zanechat recenzi"
@@ -132,7 +132,7 @@
     "message": "Soukromé procházení"
   },
   "private_browsing_warning": {
-    "message": "Video DownloadHelper není povolen v soukromých/anonymních oknech. Musíte to povolit ručně (není vyžadováno)."
+    "message": "Downhaul není povolen v soukromých/anonymních oknech. Musíte to povolit ručně (není vyžadováno)."
   },
   "private_browsing_notifications": {
     "message": "Zobrazit oznámení pro soukromá stahování"
@@ -237,7 +237,7 @@
     "message": "Historie stahování"
   },
   "history_warning": {
-    "message": "Nezaznamenáváme vaši historii stahování. Chcete, aby si Video DownloadHelper pamatoval vaši historii stahování?"
+    "message": "Nezaznamenáváme vaši historii stahování. Chcete, aby si Downhaul pamatoval vaši historii stahování?"
   },
   "history_warning_2": {
     "message": "Buďte v klidu, všechno zůstává na vašem počítači. Ceníme si vašeho soukromí."

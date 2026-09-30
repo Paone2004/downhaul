@@ -48,7 +48,7 @@
     "message": "gizle"
   },
   "translate_button_tooltip": {
-    "message": "VDH çevirisine yardımcı ol"
+    "message": "Downhaul çevirisine yardımcı ol"
   },
   "open_source_tab_button_tooltip": {
     "message": "Kaynak sekmesini aç"
@@ -87,7 +87,7 @@
     "message": "100 video indirdin!"
   },
   "leave_review_description": {
-    "message": "Video DownloadHelper'ı beğendiğini umuyoruz :) Eklenti web sitesine hoş bir inceleme yazman mümkün mü?"
+    "message": "Downhaul'ı beğendiğini umuyoruz :) Eklenti web sitesine hoş bir inceleme yazman mümkün mü?"
   },
   "leave_review_button": {
     "message": "İnceleme yaz"
@@ -126,7 +126,7 @@
     "message": "Gizli gezinme"
   },
   "private_browsing_warning": {
-    "message": "Video DownloadHelper, Özel/Gizli pencerelerde etkin değil. Bu seçeneği manuel olarak açmanız gerekiyor (zorunlu değil)."
+    "message": "Downhaul, Özel/Gizli pencerelerde etkin değil. Bu seçeneği manuel olarak açmanız gerekiyor (zorunlu değil)."
   },
   "private_browsing_notifications": {
     "message": "Gizli indirmeler için bildirim göster"
@@ -210,7 +210,7 @@
     "message": "İndirme Geçmişi"
   },
   "history_warning": {
-    "message": "İndirme geçmişinizi kaydetmiyoruz. Video DownloadHelper'ın indirme geçmişini hatırlamasını ister misin?"
+    "message": "İndirme geçmişinizi kaydetmiyoruz. Downhaul'ın indirme geçmişini hatırlamasını ister misin?"
   },
   "history_warning_2": {
     "message": "Endişelenmeyin, her şey bilgisayarınızda kalır. Gizliliğinize değer veriyoruz."
