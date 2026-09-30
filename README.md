@@ -17,7 +17,7 @@ The Downhaul icon shows up in your toolbar.
 
 ## Use
 
-1. Click the toolbar icon. By default it opens as a popup, which closes if you click on the page — annoying if you need to click play first. Go to **Settings → Panel position → Show in sidebar** to dock it instead; the sidebar stays open no matter what you click on the page.
+1. Click the toolbar icon. It opens docked to the side of the page (the sidebar), which stays open no matter what you click on the page. If yours opens as a popup instead (closes as soon as you click the page), switch it in **Settings → Panel position → Show in sidebar**.
 2. Browse to a page with video or audio and start playing it.
 3. Detected media shows up in the panel. Pick a format if there's a choice, then hit download.
 
