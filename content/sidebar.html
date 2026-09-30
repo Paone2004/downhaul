@@ -12,12 +12,12 @@
 }
 
 .roundedbox {
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   border-style: solid;
   border-width: 1px;
   background-color: var(--theme-box-bg);
   border-color: var(--theme-box-border);
-  box-shadow: 0 1px 2px var(--theme-box-shadow);
+  box-shadow: 0 1px 2px var(--theme-box-shadow), 0 4px 10px var(--theme-box-shadow);
 }    :root[theme="system"] {
   color-scheme: light dark;
 }
@@ -373,17 +373,17 @@ stack > * {
   --cyan-950: hsl(197 78.9% 14.9%);
 
   /* Sky */
-  --sky-50: hsl(204 100% 97.1%);
-  --sky-100: hsl(204 93.8% 93.7%);
-  --sky-200: hsl(200.6 94.4% 86.1%);
-  --sky-300: hsl(199.4 95.5% 73.9%);
-  --sky-400: hsl(198.4 93.2% 59.6%);
-  --sky-500: hsl(198.6 88.7% 48.4%);
-  --sky-600: hsl(200.4 98% 39.4%);
-  --sky-700: hsl(201.3 96.3% 32.2%);
-  --sky-800: hsl(201 90% 27.5%);
-  --sky-900: hsl(202 80.3% 23.9%);
-  --sky-950: hsl(204 80.2% 15.9%);
+  --sky-50: hsl(226 100% 97%);
+  --sky-100: hsl(226 100% 94%);
+  --sky-200: hsl(228 96% 89%);
+  --sky-300: hsl(230 94% 82%);
+  --sky-400: hsl(234 89% 74%);
+  --sky-500: hsl(239 84% 67%);
+  --sky-600: hsl(243 75% 59%);
+  --sky-700: hsl(245 58% 51%);
+  --sky-800: hsl(244 55% 41%);
+  --sky-900: hsl(243 47% 34%);
+  --sky-950: hsl(243 47% 20%);
 
   /* Blue */
   --blue-50: hsl(213.8 100% 96.9%);
@@ -507,6 +507,8 @@ stack > * {
   --spacing-medium: 6px;
   --spacing-large: 12px;
   --spacing-x-large: 22px;
+  --radius-sm: 5px;
+  --radius-md: 10px;
 }
 
 select {
@@ -518,13 +520,14 @@ com-native-menu, button, select {
   user-select: none;
   white-space: nowrap;
   padding: var(--spacing-small) var(--spacing-medium);
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   border-width: calc(2 * var(--hardware-pixel));
   border-style: solid;
   cursor: pointer;
   border-color: var(--theme-control-border);
   background-color: var(--theme-control-bg);
   color: inherit;
+  transition: background-color 120ms ease, border-color 120ms ease, box-shadow 120ms ease, transform 80ms ease;
 }
 
 com-native-menu {
@@ -611,7 +614,7 @@ select:focus-visible {
   max-height: 120px;
   overflow: hidden;
   text-wrap: auto;
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   pointer-events: none;
 
   opacity: 0.8;
@@ -711,12 +714,12 @@ select:focus-visible {
 }
 
 .roundedbox {
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   border-style: solid;
   border-width: 1px;
   background-color: var(--theme-box-bg);
   border-color: var(--theme-box-border);
-  box-shadow: 0 1px 2px var(--theme-box-shadow);
+  box-shadow: 0 1px 2px var(--theme-box-shadow), 0 4px 10px var(--theme-box-shadow);
 }    :root[theme="system"] {
   color-scheme: light dark;
 }
@@ -1072,17 +1075,17 @@ stack > * {
   --cyan-950: hsl(197 78.9% 14.9%);
 
   /* Sky */
-  --sky-50: hsl(204 100% 97.1%);
-  --sky-100: hsl(204 93.8% 93.7%);
-  --sky-200: hsl(200.6 94.4% 86.1%);
-  --sky-300: hsl(199.4 95.5% 73.9%);
-  --sky-400: hsl(198.4 93.2% 59.6%);
-  --sky-500: hsl(198.6 88.7% 48.4%);
-  --sky-600: hsl(200.4 98% 39.4%);
-  --sky-700: hsl(201.3 96.3% 32.2%);
-  --sky-800: hsl(201 90% 27.5%);
-  --sky-900: hsl(202 80.3% 23.9%);
-  --sky-950: hsl(204 80.2% 15.9%);
+  --sky-50: hsl(226 100% 97%);
+  --sky-100: hsl(226 100% 94%);
+  --sky-200: hsl(228 96% 89%);
+  --sky-300: hsl(230 94% 82%);
+  --sky-400: hsl(234 89% 74%);
+  --sky-500: hsl(239 84% 67%);
+  --sky-600: hsl(243 75% 59%);
+  --sky-700: hsl(245 58% 51%);
+  --sky-800: hsl(244 55% 41%);
+  --sky-900: hsl(243 47% 34%);
+  --sky-950: hsl(243 47% 20%);
 
   /* Blue */
   --blue-50: hsl(213.8 100% 96.9%);
@@ -1206,6 +1209,8 @@ stack > * {
   --spacing-medium: 6px;
   --spacing-large: 12px;
   --spacing-x-large: 22px;
+  --radius-sm: 5px;
+  --radius-md: 10px;
 }
 
 select {
@@ -1217,13 +1222,14 @@ com-native-menu, button, select {
   user-select: none;
   white-space: nowrap;
   padding: var(--spacing-small) var(--spacing-medium);
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   border-width: calc(2 * var(--hardware-pixel));
   border-style: solid;
   cursor: pointer;
   border-color: var(--theme-control-border);
   background-color: var(--theme-control-bg);
   color: inherit;
+  transition: background-color 120ms ease, border-color 120ms ease, box-shadow 120ms ease, transform 80ms ease;
 }
 
 com-native-menu {
@@ -1310,7 +1316,7 @@ select:focus-visible {
   max-height: 120px;
   overflow: hidden;
   text-wrap: auto;
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   pointer-events: none;
 
   opacity: 0.8;
@@ -1412,7 +1418,7 @@ select:focus-visible {
 
     #downloaded_container {
       flex-shrink: 0;
-      border-radius: var(--spacing-medium);
+      border-radius: var(--radius-md);
       border-style: solid;
       border-width: 1px;
 
@@ -1420,7 +1426,7 @@ select:focus-visible {
 
       background-color: var(--theme-box-bg);
       border-color: var(--theme-box-border);
-      box-shadow: 0 1px 2px var(--theme-box-shadow);
+      box-shadow: 0 1px 2px var(--theme-box-shadow), 0 4px 10px var(--theme-box-shadow);
 
       flex-flow: column-reverse;
     }
@@ -1502,12 +1508,12 @@ select:focus-visible {
 }
 
 .roundedbox {
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   border-style: solid;
   border-width: 1px;
   background-color: var(--theme-box-bg);
   border-color: var(--theme-box-border);
-  box-shadow: 0 1px 2px var(--theme-box-shadow);
+  box-shadow: 0 1px 2px var(--theme-box-shadow), 0 4px 10px var(--theme-box-shadow);
 }    :root[theme="system"] {
   color-scheme: light dark;
 }
@@ -1863,17 +1869,17 @@ stack > * {
   --cyan-950: hsl(197 78.9% 14.9%);
 
   /* Sky */
-  --sky-50: hsl(204 100% 97.1%);
-  --sky-100: hsl(204 93.8% 93.7%);
-  --sky-200: hsl(200.6 94.4% 86.1%);
-  --sky-300: hsl(199.4 95.5% 73.9%);
-  --sky-400: hsl(198.4 93.2% 59.6%);
-  --sky-500: hsl(198.6 88.7% 48.4%);
-  --sky-600: hsl(200.4 98% 39.4%);
-  --sky-700: hsl(201.3 96.3% 32.2%);
-  --sky-800: hsl(201 90% 27.5%);
-  --sky-900: hsl(202 80.3% 23.9%);
-  --sky-950: hsl(204 80.2% 15.9%);
+  --sky-50: hsl(226 100% 97%);
+  --sky-100: hsl(226 100% 94%);
+  --sky-200: hsl(228 96% 89%);
+  --sky-300: hsl(230 94% 82%);
+  --sky-400: hsl(234 89% 74%);
+  --sky-500: hsl(239 84% 67%);
+  --sky-600: hsl(243 75% 59%);
+  --sky-700: hsl(245 58% 51%);
+  --sky-800: hsl(244 55% 41%);
+  --sky-900: hsl(243 47% 34%);
+  --sky-950: hsl(243 47% 20%);
 
   /* Blue */
   --blue-50: hsl(213.8 100% 96.9%);
@@ -1997,6 +2003,8 @@ stack > * {
   --spacing-medium: 6px;
   --spacing-large: 12px;
   --spacing-x-large: 22px;
+  --radius-sm: 5px;
+  --radius-md: 10px;
 }
 
 select {
@@ -2008,13 +2016,14 @@ com-native-menu, button, select {
   user-select: none;
   white-space: nowrap;
   padding: var(--spacing-small) var(--spacing-medium);
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   border-width: calc(2 * var(--hardware-pixel));
   border-style: solid;
   cursor: pointer;
   border-color: var(--theme-control-border);
   background-color: var(--theme-control-bg);
   color: inherit;
+  transition: background-color 120ms ease, border-color 120ms ease, box-shadow 120ms ease, transform 80ms ease;
 }
 
 com-native-menu {
@@ -2101,7 +2110,7 @@ select:focus-visible {
   max-height: 120px;
   overflow: hidden;
   text-wrap: auto;
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   pointer-events: none;
 
   opacity: 0.8;
@@ -2540,17 +2549,17 @@ stack > * {
   --cyan-950: hsl(197 78.9% 14.9%);
 
   /* Sky */
-  --sky-50: hsl(204 100% 97.1%);
-  --sky-100: hsl(204 93.8% 93.7%);
-  --sky-200: hsl(200.6 94.4% 86.1%);
-  --sky-300: hsl(199.4 95.5% 73.9%);
-  --sky-400: hsl(198.4 93.2% 59.6%);
-  --sky-500: hsl(198.6 88.7% 48.4%);
-  --sky-600: hsl(200.4 98% 39.4%);
-  --sky-700: hsl(201.3 96.3% 32.2%);
-  --sky-800: hsl(201 90% 27.5%);
-  --sky-900: hsl(202 80.3% 23.9%);
-  --sky-950: hsl(204 80.2% 15.9%);
+  --sky-50: hsl(226 100% 97%);
+  --sky-100: hsl(226 100% 94%);
+  --sky-200: hsl(228 96% 89%);
+  --sky-300: hsl(230 94% 82%);
+  --sky-400: hsl(234 89% 74%);
+  --sky-500: hsl(239 84% 67%);
+  --sky-600: hsl(243 75% 59%);
+  --sky-700: hsl(245 58% 51%);
+  --sky-800: hsl(244 55% 41%);
+  --sky-900: hsl(243 47% 34%);
+  --sky-950: hsl(243 47% 20%);
 
   /* Blue */
   --blue-50: hsl(213.8 100% 96.9%);
@@ -2674,6 +2683,8 @@ stack > * {
   --spacing-medium: 6px;
   --spacing-large: 12px;
   --spacing-x-large: 22px;
+  --radius-sm: 5px;
+  --radius-md: 10px;
 }
 
 select {
@@ -2685,13 +2696,14 @@ com-native-menu, button, select {
   user-select: none;
   white-space: nowrap;
   padding: var(--spacing-small) var(--spacing-medium);
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   border-width: calc(2 * var(--hardware-pixel));
   border-style: solid;
   cursor: pointer;
   border-color: var(--theme-control-border);
   background-color: var(--theme-control-bg);
   color: inherit;
+  transition: background-color 120ms ease, border-color 120ms ease, box-shadow 120ms ease, transform 80ms ease;
 }
 
 com-native-menu {
@@ -2778,7 +2790,7 @@ select:focus-visible {
   max-height: 120px;
   overflow: hidden;
   text-wrap: auto;
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   pointer-events: none;
 
   opacity: 0.8;
@@ -2817,7 +2829,7 @@ select:focus-visible {
 
   #vbox_top {
     padding: var(--spacing-medium);
-    border-radius: var(--spacing-medium) var(--spacing-medium) 0 0;
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
   }
 
   #vbox_top.level-happy {
@@ -3205,17 +3217,17 @@ stack > * {
   --cyan-950: hsl(197 78.9% 14.9%);
 
   /* Sky */
-  --sky-50: hsl(204 100% 97.1%);
-  --sky-100: hsl(204 93.8% 93.7%);
-  --sky-200: hsl(200.6 94.4% 86.1%);
-  --sky-300: hsl(199.4 95.5% 73.9%);
-  --sky-400: hsl(198.4 93.2% 59.6%);
-  --sky-500: hsl(198.6 88.7% 48.4%);
-  --sky-600: hsl(200.4 98% 39.4%);
-  --sky-700: hsl(201.3 96.3% 32.2%);
-  --sky-800: hsl(201 90% 27.5%);
-  --sky-900: hsl(202 80.3% 23.9%);
-  --sky-950: hsl(204 80.2% 15.9%);
+  --sky-50: hsl(226 100% 97%);
+  --sky-100: hsl(226 100% 94%);
+  --sky-200: hsl(228 96% 89%);
+  --sky-300: hsl(230 94% 82%);
+  --sky-400: hsl(234 89% 74%);
+  --sky-500: hsl(239 84% 67%);
+  --sky-600: hsl(243 75% 59%);
+  --sky-700: hsl(245 58% 51%);
+  --sky-800: hsl(244 55% 41%);
+  --sky-900: hsl(243 47% 34%);
+  --sky-950: hsl(243 47% 20%);
 
   /* Blue */
   --blue-50: hsl(213.8 100% 96.9%);
@@ -3339,6 +3351,8 @@ stack > * {
   --spacing-medium: 6px;
   --spacing-large: 12px;
   --spacing-x-large: 22px;
+  --radius-sm: 5px;
+  --radius-md: 10px;
 }
 
 select {
@@ -3350,13 +3364,14 @@ com-native-menu, button, select {
   user-select: none;
   white-space: nowrap;
   padding: var(--spacing-small) var(--spacing-medium);
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   border-width: calc(2 * var(--hardware-pixel));
   border-style: solid;
   cursor: pointer;
   border-color: var(--theme-control-border);
   background-color: var(--theme-control-bg);
   color: inherit;
+  transition: background-color 120ms ease, border-color 120ms ease, box-shadow 120ms ease, transform 80ms ease;
 }
 
 com-native-menu {
@@ -3443,7 +3458,7 @@ select:focus-visible {
   max-height: 120px;
   overflow: hidden;
   text-wrap: auto;
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   pointer-events: none;
 
   opacity: 0.8;
@@ -3862,17 +3877,17 @@ stack > * {
   --cyan-950: hsl(197 78.9% 14.9%);
 
   /* Sky */
-  --sky-50: hsl(204 100% 97.1%);
-  --sky-100: hsl(204 93.8% 93.7%);
-  --sky-200: hsl(200.6 94.4% 86.1%);
-  --sky-300: hsl(199.4 95.5% 73.9%);
-  --sky-400: hsl(198.4 93.2% 59.6%);
-  --sky-500: hsl(198.6 88.7% 48.4%);
-  --sky-600: hsl(200.4 98% 39.4%);
-  --sky-700: hsl(201.3 96.3% 32.2%);
-  --sky-800: hsl(201 90% 27.5%);
-  --sky-900: hsl(202 80.3% 23.9%);
-  --sky-950: hsl(204 80.2% 15.9%);
+  --sky-50: hsl(226 100% 97%);
+  --sky-100: hsl(226 100% 94%);
+  --sky-200: hsl(228 96% 89%);
+  --sky-300: hsl(230 94% 82%);
+  --sky-400: hsl(234 89% 74%);
+  --sky-500: hsl(239 84% 67%);
+  --sky-600: hsl(243 75% 59%);
+  --sky-700: hsl(245 58% 51%);
+  --sky-800: hsl(244 55% 41%);
+  --sky-900: hsl(243 47% 34%);
+  --sky-950: hsl(243 47% 20%);
 
   /* Blue */
   --blue-50: hsl(213.8 100% 96.9%);
@@ -3996,6 +4011,8 @@ stack > * {
   --spacing-medium: 6px;
   --spacing-large: 12px;
   --spacing-x-large: 22px;
+  --radius-sm: 5px;
+  --radius-md: 10px;
 }
 
 select {
@@ -4007,13 +4024,14 @@ com-native-menu, button, select {
   user-select: none;
   white-space: nowrap;
   padding: var(--spacing-small) var(--spacing-medium);
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   border-width: calc(2 * var(--hardware-pixel));
   border-style: solid;
   cursor: pointer;
   border-color: var(--theme-control-border);
   background-color: var(--theme-control-bg);
   color: inherit;
+  transition: background-color 120ms ease, border-color 120ms ease, box-shadow 120ms ease, transform 80ms ease;
 }
 
 com-native-menu {
@@ -4100,7 +4118,7 @@ select:focus-visible {
   max-height: 120px;
   overflow: hidden;
   text-wrap: auto;
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   pointer-events: none;
 
   opacity: 0.8;
@@ -4505,17 +4523,17 @@ stack > * {
   --cyan-950: hsl(197 78.9% 14.9%);
 
   /* Sky */
-  --sky-50: hsl(204 100% 97.1%);
-  --sky-100: hsl(204 93.8% 93.7%);
-  --sky-200: hsl(200.6 94.4% 86.1%);
-  --sky-300: hsl(199.4 95.5% 73.9%);
-  --sky-400: hsl(198.4 93.2% 59.6%);
-  --sky-500: hsl(198.6 88.7% 48.4%);
-  --sky-600: hsl(200.4 98% 39.4%);
-  --sky-700: hsl(201.3 96.3% 32.2%);
-  --sky-800: hsl(201 90% 27.5%);
-  --sky-900: hsl(202 80.3% 23.9%);
-  --sky-950: hsl(204 80.2% 15.9%);
+  --sky-50: hsl(226 100% 97%);
+  --sky-100: hsl(226 100% 94%);
+  --sky-200: hsl(228 96% 89%);
+  --sky-300: hsl(230 94% 82%);
+  --sky-400: hsl(234 89% 74%);
+  --sky-500: hsl(239 84% 67%);
+  --sky-600: hsl(243 75% 59%);
+  --sky-700: hsl(245 58% 51%);
+  --sky-800: hsl(244 55% 41%);
+  --sky-900: hsl(243 47% 34%);
+  --sky-950: hsl(243 47% 20%);
 
   /* Blue */
   --blue-50: hsl(213.8 100% 96.9%);
@@ -4639,6 +4657,8 @@ stack > * {
   --spacing-medium: 6px;
   --spacing-large: 12px;
   --spacing-x-large: 22px;
+  --radius-sm: 5px;
+  --radius-md: 10px;
 }
 
 select {
@@ -4650,13 +4670,14 @@ com-native-menu, button, select {
   user-select: none;
   white-space: nowrap;
   padding: var(--spacing-small) var(--spacing-medium);
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   border-width: calc(2 * var(--hardware-pixel));
   border-style: solid;
   cursor: pointer;
   border-color: var(--theme-control-border);
   background-color: var(--theme-control-bg);
   color: inherit;
+  transition: background-color 120ms ease, border-color 120ms ease, box-shadow 120ms ease, transform 80ms ease;
 }
 
 com-native-menu {
@@ -4743,7 +4764,7 @@ select:focus-visible {
   max-height: 120px;
   overflow: hidden;
   text-wrap: auto;
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   pointer-events: none;
 
   opacity: 0.8;
@@ -5160,17 +5181,17 @@ stack > * {
   --cyan-950: hsl(197 78.9% 14.9%);
 
   /* Sky */
-  --sky-50: hsl(204 100% 97.1%);
-  --sky-100: hsl(204 93.8% 93.7%);
-  --sky-200: hsl(200.6 94.4% 86.1%);
-  --sky-300: hsl(199.4 95.5% 73.9%);
-  --sky-400: hsl(198.4 93.2% 59.6%);
-  --sky-500: hsl(198.6 88.7% 48.4%);
-  --sky-600: hsl(200.4 98% 39.4%);
-  --sky-700: hsl(201.3 96.3% 32.2%);
-  --sky-800: hsl(201 90% 27.5%);
-  --sky-900: hsl(202 80.3% 23.9%);
-  --sky-950: hsl(204 80.2% 15.9%);
+  --sky-50: hsl(226 100% 97%);
+  --sky-100: hsl(226 100% 94%);
+  --sky-200: hsl(228 96% 89%);
+  --sky-300: hsl(230 94% 82%);
+  --sky-400: hsl(234 89% 74%);
+  --sky-500: hsl(239 84% 67%);
+  --sky-600: hsl(243 75% 59%);
+  --sky-700: hsl(245 58% 51%);
+  --sky-800: hsl(244 55% 41%);
+  --sky-900: hsl(243 47% 34%);
+  --sky-950: hsl(243 47% 20%);
 
   /* Blue */
   --blue-50: hsl(213.8 100% 96.9%);
@@ -5294,6 +5315,8 @@ stack > * {
   --spacing-medium: 6px;
   --spacing-large: 12px;
   --spacing-x-large: 22px;
+  --radius-sm: 5px;
+  --radius-md: 10px;
 }
 
 select {
@@ -5305,13 +5328,14 @@ com-native-menu, button, select {
   user-select: none;
   white-space: nowrap;
   padding: var(--spacing-small) var(--spacing-medium);
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   border-width: calc(2 * var(--hardware-pixel));
   border-style: solid;
   cursor: pointer;
   border-color: var(--theme-control-border);
   background-color: var(--theme-control-bg);
   color: inherit;
+  transition: background-color 120ms ease, border-color 120ms ease, box-shadow 120ms ease, transform 80ms ease;
 }
 
 com-native-menu {
@@ -5398,7 +5422,7 @@ select:focus-visible {
   max-height: 120px;
   overflow: hidden;
   text-wrap: auto;
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   pointer-events: none;
 
   opacity: 0.8;
@@ -5485,12 +5509,12 @@ select:focus-visible {
 }
 
 .roundedbox {
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   border-style: solid;
   border-width: 1px;
   background-color: var(--theme-box-bg);
   border-color: var(--theme-box-border);
-  box-shadow: 0 1px 2px var(--theme-box-shadow);
+  box-shadow: 0 1px 2px var(--theme-box-shadow), 0 4px 10px var(--theme-box-shadow);
 }    *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -5814,17 +5838,17 @@ stack > * {
   --cyan-950: hsl(197 78.9% 14.9%);
 
   /* Sky */
-  --sky-50: hsl(204 100% 97.1%);
-  --sky-100: hsl(204 93.8% 93.7%);
-  --sky-200: hsl(200.6 94.4% 86.1%);
-  --sky-300: hsl(199.4 95.5% 73.9%);
-  --sky-400: hsl(198.4 93.2% 59.6%);
-  --sky-500: hsl(198.6 88.7% 48.4%);
-  --sky-600: hsl(200.4 98% 39.4%);
-  --sky-700: hsl(201.3 96.3% 32.2%);
-  --sky-800: hsl(201 90% 27.5%);
-  --sky-900: hsl(202 80.3% 23.9%);
-  --sky-950: hsl(204 80.2% 15.9%);
+  --sky-50: hsl(226 100% 97%);
+  --sky-100: hsl(226 100% 94%);
+  --sky-200: hsl(228 96% 89%);
+  --sky-300: hsl(230 94% 82%);
+  --sky-400: hsl(234 89% 74%);
+  --sky-500: hsl(239 84% 67%);
+  --sky-600: hsl(243 75% 59%);
+  --sky-700: hsl(245 58% 51%);
+  --sky-800: hsl(244 55% 41%);
+  --sky-900: hsl(243 47% 34%);
+  --sky-950: hsl(243 47% 20%);
 
   /* Blue */
   --blue-50: hsl(213.8 100% 96.9%);
@@ -5948,6 +5972,8 @@ stack > * {
   --spacing-medium: 6px;
   --spacing-large: 12px;
   --spacing-x-large: 22px;
+  --radius-sm: 5px;
+  --radius-md: 10px;
 }
 
 select {
@@ -5959,13 +5985,14 @@ com-native-menu, button, select {
   user-select: none;
   white-space: nowrap;
   padding: var(--spacing-small) var(--spacing-medium);
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   border-width: calc(2 * var(--hardware-pixel));
   border-style: solid;
   cursor: pointer;
   border-color: var(--theme-control-border);
   background-color: var(--theme-control-bg);
   color: inherit;
+  transition: background-color 120ms ease, border-color 120ms ease, box-shadow 120ms ease, transform 80ms ease;
 }
 
 com-native-menu {
@@ -6052,7 +6079,7 @@ select:focus-visible {
   max-height: 120px;
   overflow: hidden;
   text-wrap: auto;
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   pointer-events: none;
 
   opacity: 0.8;
@@ -6324,16 +6351,16 @@ select:focus-visible {
 }
 
 .roundedbox {
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   border-style: solid;
   border-width: 1px;
   background-color: var(--theme-box-bg);
   border-color: var(--theme-box-border);
-  box-shadow: 0 1px 2px var(--theme-box-shadow);
+  box-shadow: 0 1px 2px var(--theme-box-shadow), 0 4px 10px var(--theme-box-shadow);
 }
 .media_filename {
   display: inline;
-  border-radius: var(--spacing-small);
+  border-radius: var(--radius-sm);
   margin-right: var(--dismiss-button-width);
   min-height: var(--dismiss-button-height);
   font-size: 1.1rem;
@@ -6718,17 +6745,17 @@ stack > * {
   --cyan-950: hsl(197 78.9% 14.9%);
 
   /* Sky */
-  --sky-50: hsl(204 100% 97.1%);
-  --sky-100: hsl(204 93.8% 93.7%);
-  --sky-200: hsl(200.6 94.4% 86.1%);
-  --sky-300: hsl(199.4 95.5% 73.9%);
-  --sky-400: hsl(198.4 93.2% 59.6%);
-  --sky-500: hsl(198.6 88.7% 48.4%);
-  --sky-600: hsl(200.4 98% 39.4%);
-  --sky-700: hsl(201.3 96.3% 32.2%);
-  --sky-800: hsl(201 90% 27.5%);
-  --sky-900: hsl(202 80.3% 23.9%);
-  --sky-950: hsl(204 80.2% 15.9%);
+  --sky-50: hsl(226 100% 97%);
+  --sky-100: hsl(226 100% 94%);
+  --sky-200: hsl(228 96% 89%);
+  --sky-300: hsl(230 94% 82%);
+  --sky-400: hsl(234 89% 74%);
+  --sky-500: hsl(239 84% 67%);
+  --sky-600: hsl(243 75% 59%);
+  --sky-700: hsl(245 58% 51%);
+  --sky-800: hsl(244 55% 41%);
+  --sky-900: hsl(243 47% 34%);
+  --sky-950: hsl(243 47% 20%);
 
   /* Blue */
   --blue-50: hsl(213.8 100% 96.9%);
@@ -6852,6 +6879,8 @@ stack > * {
   --spacing-medium: 6px;
   --spacing-large: 12px;
   --spacing-x-large: 22px;
+  --radius-sm: 5px;
+  --radius-md: 10px;
 }
 
 select {
@@ -6863,13 +6892,14 @@ com-native-menu, button, select {
   user-select: none;
   white-space: nowrap;
   padding: var(--spacing-small) var(--spacing-medium);
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   border-width: calc(2 * var(--hardware-pixel));
   border-style: solid;
   cursor: pointer;
   border-color: var(--theme-control-border);
   background-color: var(--theme-control-bg);
   color: inherit;
+  transition: background-color 120ms ease, border-color 120ms ease, box-shadow 120ms ease, transform 80ms ease;
 }
 
 com-native-menu {
@@ -6956,7 +6986,7 @@ select:focus-visible {
   max-height: 120px;
   overflow: hidden;
   text-wrap: auto;
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   pointer-events: none;
 
   opacity: 0.8;
@@ -7001,7 +7031,7 @@ select:focus-visible {
   #stack_top {
     width: calc(var(--video-height) * 16 / 9);
     height: var(--video-height);
-    border-radius: var(--spacing-medium);
+    border-radius: var(--radius-md);
     overflow: hidden;
     border-style: solid;
     border-width: 1px;
@@ -7382,17 +7412,17 @@ stack > * {
   --cyan-950: hsl(197 78.9% 14.9%);
 
   /* Sky */
-  --sky-50: hsl(204 100% 97.1%);
-  --sky-100: hsl(204 93.8% 93.7%);
-  --sky-200: hsl(200.6 94.4% 86.1%);
-  --sky-300: hsl(199.4 95.5% 73.9%);
-  --sky-400: hsl(198.4 93.2% 59.6%);
-  --sky-500: hsl(198.6 88.7% 48.4%);
-  --sky-600: hsl(200.4 98% 39.4%);
-  --sky-700: hsl(201.3 96.3% 32.2%);
-  --sky-800: hsl(201 90% 27.5%);
-  --sky-900: hsl(202 80.3% 23.9%);
-  --sky-950: hsl(204 80.2% 15.9%);
+  --sky-50: hsl(226 100% 97%);
+  --sky-100: hsl(226 100% 94%);
+  --sky-200: hsl(228 96% 89%);
+  --sky-300: hsl(230 94% 82%);
+  --sky-400: hsl(234 89% 74%);
+  --sky-500: hsl(239 84% 67%);
+  --sky-600: hsl(243 75% 59%);
+  --sky-700: hsl(245 58% 51%);
+  --sky-800: hsl(244 55% 41%);
+  --sky-900: hsl(243 47% 34%);
+  --sky-950: hsl(243 47% 20%);
 
   /* Blue */
   --blue-50: hsl(213.8 100% 96.9%);
@@ -7516,6 +7546,8 @@ stack > * {
   --spacing-medium: 6px;
   --spacing-large: 12px;
   --spacing-x-large: 22px;
+  --radius-sm: 5px;
+  --radius-md: 10px;
 }
 
 select {
@@ -7527,13 +7559,14 @@ com-native-menu, button, select {
   user-select: none;
   white-space: nowrap;
   padding: var(--spacing-small) var(--spacing-medium);
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   border-width: calc(2 * var(--hardware-pixel));
   border-style: solid;
   cursor: pointer;
   border-color: var(--theme-control-border);
   background-color: var(--theme-control-bg);
   color: inherit;
+  transition: background-color 120ms ease, border-color 120ms ease, box-shadow 120ms ease, transform 80ms ease;
 }
 
 com-native-menu {
@@ -7620,7 +7653,7 @@ select:focus-visible {
   max-height: 120px;
   overflow: hidden;
   text-wrap: auto;
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   pointer-events: none;
 
   opacity: 0.8;
@@ -7693,16 +7726,16 @@ select:focus-visible {
 }
 
 .roundedbox {
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   border-style: solid;
   border-width: 1px;
   background-color: var(--theme-box-bg);
   border-color: var(--theme-box-border);
-  box-shadow: 0 1px 2px var(--theme-box-shadow);
+  box-shadow: 0 1px 2px var(--theme-box-shadow), 0 4px 10px var(--theme-box-shadow);
 }
 .media_filename {
   display: inline;
-  border-radius: var(--spacing-small);
+  border-radius: var(--radius-sm);
   margin-right: var(--dismiss-button-width);
   min-height: var(--dismiss-button-height);
   font-size: 1.1rem;
@@ -8087,17 +8120,17 @@ stack > * {
   --cyan-950: hsl(197 78.9% 14.9%);
 
   /* Sky */
-  --sky-50: hsl(204 100% 97.1%);
-  --sky-100: hsl(204 93.8% 93.7%);
-  --sky-200: hsl(200.6 94.4% 86.1%);
-  --sky-300: hsl(199.4 95.5% 73.9%);
-  --sky-400: hsl(198.4 93.2% 59.6%);
-  --sky-500: hsl(198.6 88.7% 48.4%);
-  --sky-600: hsl(200.4 98% 39.4%);
-  --sky-700: hsl(201.3 96.3% 32.2%);
-  --sky-800: hsl(201 90% 27.5%);
-  --sky-900: hsl(202 80.3% 23.9%);
-  --sky-950: hsl(204 80.2% 15.9%);
+  --sky-50: hsl(226 100% 97%);
+  --sky-100: hsl(226 100% 94%);
+  --sky-200: hsl(228 96% 89%);
+  --sky-300: hsl(230 94% 82%);
+  --sky-400: hsl(234 89% 74%);
+  --sky-500: hsl(239 84% 67%);
+  --sky-600: hsl(243 75% 59%);
+  --sky-700: hsl(245 58% 51%);
+  --sky-800: hsl(244 55% 41%);
+  --sky-900: hsl(243 47% 34%);
+  --sky-950: hsl(243 47% 20%);
 
   /* Blue */
   --blue-50: hsl(213.8 100% 96.9%);
@@ -8221,6 +8254,8 @@ stack > * {
   --spacing-medium: 6px;
   --spacing-large: 12px;
   --spacing-x-large: 22px;
+  --radius-sm: 5px;
+  --radius-md: 10px;
 }
 
 select {
@@ -8232,13 +8267,14 @@ com-native-menu, button, select {
   user-select: none;
   white-space: nowrap;
   padding: var(--spacing-small) var(--spacing-medium);
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   border-width: calc(2 * var(--hardware-pixel));
   border-style: solid;
   cursor: pointer;
   border-color: var(--theme-control-border);
   background-color: var(--theme-control-bg);
   color: inherit;
+  transition: background-color 120ms ease, border-color 120ms ease, box-shadow 120ms ease, transform 80ms ease;
 }
 
 com-native-menu {
@@ -8325,7 +8361,7 @@ select:focus-visible {
   max-height: 120px;
   overflow: hidden;
   text-wrap: auto;
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   pointer-events: none;
 
   opacity: 0.8;
@@ -8504,16 +8540,16 @@ select:focus-visible {
 }
 
 .roundedbox {
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   border-style: solid;
   border-width: 1px;
   background-color: var(--theme-box-bg);
   border-color: var(--theme-box-border);
-  box-shadow: 0 1px 2px var(--theme-box-shadow);
+  box-shadow: 0 1px 2px var(--theme-box-shadow), 0 4px 10px var(--theme-box-shadow);
 }
 .media_filename {
   display: inline;
-  border-radius: var(--spacing-small);
+  border-radius: var(--radius-sm);
   margin-right: var(--dismiss-button-width);
   min-height: var(--dismiss-button-height);
   font-size: 1.1rem;
@@ -8898,17 +8934,17 @@ stack > * {
   --cyan-950: hsl(197 78.9% 14.9%);
 
   /* Sky */
-  --sky-50: hsl(204 100% 97.1%);
-  --sky-100: hsl(204 93.8% 93.7%);
-  --sky-200: hsl(200.6 94.4% 86.1%);
-  --sky-300: hsl(199.4 95.5% 73.9%);
-  --sky-400: hsl(198.4 93.2% 59.6%);
-  --sky-500: hsl(198.6 88.7% 48.4%);
-  --sky-600: hsl(200.4 98% 39.4%);
-  --sky-700: hsl(201.3 96.3% 32.2%);
-  --sky-800: hsl(201 90% 27.5%);
-  --sky-900: hsl(202 80.3% 23.9%);
-  --sky-950: hsl(204 80.2% 15.9%);
+  --sky-50: hsl(226 100% 97%);
+  --sky-100: hsl(226 100% 94%);
+  --sky-200: hsl(228 96% 89%);
+  --sky-300: hsl(230 94% 82%);
+  --sky-400: hsl(234 89% 74%);
+  --sky-500: hsl(239 84% 67%);
+  --sky-600: hsl(243 75% 59%);
+  --sky-700: hsl(245 58% 51%);
+  --sky-800: hsl(244 55% 41%);
+  --sky-900: hsl(243 47% 34%);
+  --sky-950: hsl(243 47% 20%);
 
   /* Blue */
   --blue-50: hsl(213.8 100% 96.9%);
@@ -9032,6 +9068,8 @@ stack > * {
   --spacing-medium: 6px;
   --spacing-large: 12px;
   --spacing-x-large: 22px;
+  --radius-sm: 5px;
+  --radius-md: 10px;
 }
 
 select {
@@ -9043,13 +9081,14 @@ com-native-menu, button, select {
   user-select: none;
   white-space: nowrap;
   padding: var(--spacing-small) var(--spacing-medium);
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   border-width: calc(2 * var(--hardware-pixel));
   border-style: solid;
   cursor: pointer;
   border-color: var(--theme-control-border);
   background-color: var(--theme-control-bg);
   color: inherit;
+  transition: background-color 120ms ease, border-color 120ms ease, box-shadow 120ms ease, transform 80ms ease;
 }
 
 com-native-menu {
@@ -9136,7 +9175,7 @@ select:focus-visible {
   max-height: 120px;
   overflow: hidden;
   text-wrap: auto;
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   pointer-events: none;
 
   opacity: 0.8;
@@ -9183,7 +9222,7 @@ select:focus-visible {
     gap: 1ch;
     position: relative;
     overflow: hidden;
-    border-radius: var(--spacing-medium);
+    border-radius: var(--radius-md);
     padding: 0 var(--spacing-medium);
 
     border-width: 1px;
@@ -9274,16 +9313,16 @@ select:focus-visible {
 }
 
 .roundedbox {
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   border-style: solid;
   border-width: 1px;
   background-color: var(--theme-box-bg);
   border-color: var(--theme-box-border);
-  box-shadow: 0 1px 2px var(--theme-box-shadow);
+  box-shadow: 0 1px 2px var(--theme-box-shadow), 0 4px 10px var(--theme-box-shadow);
 }
 .media_filename {
   display: inline;
-  border-radius: var(--spacing-small);
+  border-radius: var(--radius-sm);
   margin-right: var(--dismiss-button-width);
   min-height: var(--dismiss-button-height);
   font-size: 1.1rem;
@@ -9668,17 +9707,17 @@ stack > * {
   --cyan-950: hsl(197 78.9% 14.9%);
 
   /* Sky */
-  --sky-50: hsl(204 100% 97.1%);
-  --sky-100: hsl(204 93.8% 93.7%);
-  --sky-200: hsl(200.6 94.4% 86.1%);
-  --sky-300: hsl(199.4 95.5% 73.9%);
-  --sky-400: hsl(198.4 93.2% 59.6%);
-  --sky-500: hsl(198.6 88.7% 48.4%);
-  --sky-600: hsl(200.4 98% 39.4%);
-  --sky-700: hsl(201.3 96.3% 32.2%);
-  --sky-800: hsl(201 90% 27.5%);
-  --sky-900: hsl(202 80.3% 23.9%);
-  --sky-950: hsl(204 80.2% 15.9%);
+  --sky-50: hsl(226 100% 97%);
+  --sky-100: hsl(226 100% 94%);
+  --sky-200: hsl(228 96% 89%);
+  --sky-300: hsl(230 94% 82%);
+  --sky-400: hsl(234 89% 74%);
+  --sky-500: hsl(239 84% 67%);
+  --sky-600: hsl(243 75% 59%);
+  --sky-700: hsl(245 58% 51%);
+  --sky-800: hsl(244 55% 41%);
+  --sky-900: hsl(243 47% 34%);
+  --sky-950: hsl(243 47% 20%);
 
   /* Blue */
   --blue-50: hsl(213.8 100% 96.9%);
@@ -9802,6 +9841,8 @@ stack > * {
   --spacing-medium: 6px;
   --spacing-large: 12px;
   --spacing-x-large: 22px;
+  --radius-sm: 5px;
+  --radius-md: 10px;
 }
 
 select {
@@ -9813,13 +9854,14 @@ com-native-menu, button, select {
   user-select: none;
   white-space: nowrap;
   padding: var(--spacing-small) var(--spacing-medium);
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   border-width: calc(2 * var(--hardware-pixel));
   border-style: solid;
   cursor: pointer;
   border-color: var(--theme-control-border);
   background-color: var(--theme-control-bg);
   color: inherit;
+  transition: background-color 120ms ease, border-color 120ms ease, box-shadow 120ms ease, transform 80ms ease;
 }
 
 com-native-menu {
@@ -9906,7 +9948,7 @@ select:focus-visible {
   max-height: 120px;
   overflow: hidden;
   text-wrap: auto;
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   pointer-events: none;
 
   opacity: 0.8;
@@ -10368,17 +10410,17 @@ stack > * {
   --cyan-950: hsl(197 78.9% 14.9%);
 
   /* Sky */
-  --sky-50: hsl(204 100% 97.1%);
-  --sky-100: hsl(204 93.8% 93.7%);
-  --sky-200: hsl(200.6 94.4% 86.1%);
-  --sky-300: hsl(199.4 95.5% 73.9%);
-  --sky-400: hsl(198.4 93.2% 59.6%);
-  --sky-500: hsl(198.6 88.7% 48.4%);
-  --sky-600: hsl(200.4 98% 39.4%);
-  --sky-700: hsl(201.3 96.3% 32.2%);
-  --sky-800: hsl(201 90% 27.5%);
-  --sky-900: hsl(202 80.3% 23.9%);
-  --sky-950: hsl(204 80.2% 15.9%);
+  --sky-50: hsl(226 100% 97%);
+  --sky-100: hsl(226 100% 94%);
+  --sky-200: hsl(228 96% 89%);
+  --sky-300: hsl(230 94% 82%);
+  --sky-400: hsl(234 89% 74%);
+  --sky-500: hsl(239 84% 67%);
+  --sky-600: hsl(243 75% 59%);
+  --sky-700: hsl(245 58% 51%);
+  --sky-800: hsl(244 55% 41%);
+  --sky-900: hsl(243 47% 34%);
+  --sky-950: hsl(243 47% 20%);
 
   /* Blue */
   --blue-50: hsl(213.8 100% 96.9%);
@@ -10502,6 +10544,8 @@ stack > * {
   --spacing-medium: 6px;
   --spacing-large: 12px;
   --spacing-x-large: 22px;
+  --radius-sm: 5px;
+  --radius-md: 10px;
 }
 
 select {
@@ -10513,13 +10557,14 @@ com-native-menu, button, select {
   user-select: none;
   white-space: nowrap;
   padding: var(--spacing-small) var(--spacing-medium);
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   border-width: calc(2 * var(--hardware-pixel));
   border-style: solid;
   cursor: pointer;
   border-color: var(--theme-control-border);
   background-color: var(--theme-control-bg);
   color: inherit;
+  transition: background-color 120ms ease, border-color 120ms ease, box-shadow 120ms ease, transform 80ms ease;
 }
 
 com-native-menu {
@@ -10606,7 +10651,7 @@ select:focus-visible {
   max-height: 120px;
   overflow: hidden;
   text-wrap: auto;
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   pointer-events: none;
 
   opacity: 0.8;
@@ -10659,7 +10704,7 @@ select:focus-visible {
 
   #span_size {
     font-size: 0.8rem;
-    border-radius: var(--spacing-small);
+    border-radius: var(--radius-sm);
     padding: var(--spacing-small);
     border-width: var(--hardware-pixel);
     border-style: solid;
@@ -11027,17 +11072,17 @@ stack > * {
   --cyan-950: hsl(197 78.9% 14.9%);
 
   /* Sky */
-  --sky-50: hsl(204 100% 97.1%);
-  --sky-100: hsl(204 93.8% 93.7%);
-  --sky-200: hsl(200.6 94.4% 86.1%);
-  --sky-300: hsl(199.4 95.5% 73.9%);
-  --sky-400: hsl(198.4 93.2% 59.6%);
-  --sky-500: hsl(198.6 88.7% 48.4%);
-  --sky-600: hsl(200.4 98% 39.4%);
-  --sky-700: hsl(201.3 96.3% 32.2%);
-  --sky-800: hsl(201 90% 27.5%);
-  --sky-900: hsl(202 80.3% 23.9%);
-  --sky-950: hsl(204 80.2% 15.9%);
+  --sky-50: hsl(226 100% 97%);
+  --sky-100: hsl(226 100% 94%);
+  --sky-200: hsl(228 96% 89%);
+  --sky-300: hsl(230 94% 82%);
+  --sky-400: hsl(234 89% 74%);
+  --sky-500: hsl(239 84% 67%);
+  --sky-600: hsl(243 75% 59%);
+  --sky-700: hsl(245 58% 51%);
+  --sky-800: hsl(244 55% 41%);
+  --sky-900: hsl(243 47% 34%);
+  --sky-950: hsl(243 47% 20%);
 
   /* Blue */
   --blue-50: hsl(213.8 100% 96.9%);
@@ -11161,6 +11206,8 @@ stack > * {
   --spacing-medium: 6px;
   --spacing-large: 12px;
   --spacing-x-large: 22px;
+  --radius-sm: 5px;
+  --radius-md: 10px;
 }
 
 select {
@@ -11172,13 +11219,14 @@ com-native-menu, button, select {
   user-select: none;
   white-space: nowrap;
   padding: var(--spacing-small) var(--spacing-medium);
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   border-width: calc(2 * var(--hardware-pixel));
   border-style: solid;
   cursor: pointer;
   border-color: var(--theme-control-border);
   background-color: var(--theme-control-bg);
   color: inherit;
+  transition: background-color 120ms ease, border-color 120ms ease, box-shadow 120ms ease, transform 80ms ease;
 }
 
 com-native-menu {
@@ -11265,7 +11313,7 @@ select:focus-visible {
   max-height: 120px;
   overflow: hidden;
   text-wrap: auto;
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   pointer-events: none;
 
   opacity: 0.8;
@@ -11308,7 +11356,7 @@ select:focus-visible {
 
   #hbox_meta {
     padding: 0 var(--spacing-medium);
-    border-radius: var(--spacing-small);
+    border-radius: var(--radius-sm);
     gap: var(--spacing-small);
     pointer-events: none;
 
@@ -11671,17 +11719,17 @@ stack > * {
   --cyan-950: hsl(197 78.9% 14.9%);
 
   /* Sky */
-  --sky-50: hsl(204 100% 97.1%);
-  --sky-100: hsl(204 93.8% 93.7%);
-  --sky-200: hsl(200.6 94.4% 86.1%);
-  --sky-300: hsl(199.4 95.5% 73.9%);
-  --sky-400: hsl(198.4 93.2% 59.6%);
-  --sky-500: hsl(198.6 88.7% 48.4%);
-  --sky-600: hsl(200.4 98% 39.4%);
-  --sky-700: hsl(201.3 96.3% 32.2%);
-  --sky-800: hsl(201 90% 27.5%);
-  --sky-900: hsl(202 80.3% 23.9%);
-  --sky-950: hsl(204 80.2% 15.9%);
+  --sky-50: hsl(226 100% 97%);
+  --sky-100: hsl(226 100% 94%);
+  --sky-200: hsl(228 96% 89%);
+  --sky-300: hsl(230 94% 82%);
+  --sky-400: hsl(234 89% 74%);
+  --sky-500: hsl(239 84% 67%);
+  --sky-600: hsl(243 75% 59%);
+  --sky-700: hsl(245 58% 51%);
+  --sky-800: hsl(244 55% 41%);
+  --sky-900: hsl(243 47% 34%);
+  --sky-950: hsl(243 47% 20%);
 
   /* Blue */
   --blue-50: hsl(213.8 100% 96.9%);
@@ -11805,6 +11853,8 @@ stack > * {
   --spacing-medium: 6px;
   --spacing-large: 12px;
   --spacing-x-large: 22px;
+  --radius-sm: 5px;
+  --radius-md: 10px;
 }
 
 select {
@@ -11816,13 +11866,14 @@ com-native-menu, button, select {
   user-select: none;
   white-space: nowrap;
   padding: var(--spacing-small) var(--spacing-medium);
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   border-width: calc(2 * var(--hardware-pixel));
   border-style: solid;
   cursor: pointer;
   border-color: var(--theme-control-border);
   background-color: var(--theme-control-bg);
   color: inherit;
+  transition: background-color 120ms ease, border-color 120ms ease, box-shadow 120ms ease, transform 80ms ease;
 }
 
 com-native-menu {
@@ -11909,7 +11960,7 @@ select:focus-visible {
   max-height: 120px;
   overflow: hidden;
   text-wrap: auto;
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   pointer-events: none;
 
   opacity: 0.8;
@@ -12302,17 +12353,17 @@ stack > * {
   --cyan-950: hsl(197 78.9% 14.9%);
 
   /* Sky */
-  --sky-50: hsl(204 100% 97.1%);
-  --sky-100: hsl(204 93.8% 93.7%);
-  --sky-200: hsl(200.6 94.4% 86.1%);
-  --sky-300: hsl(199.4 95.5% 73.9%);
-  --sky-400: hsl(198.4 93.2% 59.6%);
-  --sky-500: hsl(198.6 88.7% 48.4%);
-  --sky-600: hsl(200.4 98% 39.4%);
-  --sky-700: hsl(201.3 96.3% 32.2%);
-  --sky-800: hsl(201 90% 27.5%);
-  --sky-900: hsl(202 80.3% 23.9%);
-  --sky-950: hsl(204 80.2% 15.9%);
+  --sky-50: hsl(226 100% 97%);
+  --sky-100: hsl(226 100% 94%);
+  --sky-200: hsl(228 96% 89%);
+  --sky-300: hsl(230 94% 82%);
+  --sky-400: hsl(234 89% 74%);
+  --sky-500: hsl(239 84% 67%);
+  --sky-600: hsl(243 75% 59%);
+  --sky-700: hsl(245 58% 51%);
+  --sky-800: hsl(244 55% 41%);
+  --sky-900: hsl(243 47% 34%);
+  --sky-950: hsl(243 47% 20%);
 
   /* Blue */
   --blue-50: hsl(213.8 100% 96.9%);
@@ -12436,6 +12487,8 @@ stack > * {
   --spacing-medium: 6px;
   --spacing-large: 12px;
   --spacing-x-large: 22px;
+  --radius-sm: 5px;
+  --radius-md: 10px;
 }
 
 select {
@@ -12447,13 +12500,14 @@ com-native-menu, button, select {
   user-select: none;
   white-space: nowrap;
   padding: var(--spacing-small) var(--spacing-medium);
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   border-width: calc(2 * var(--hardware-pixel));
   border-style: solid;
   cursor: pointer;
   border-color: var(--theme-control-border);
   background-color: var(--theme-control-bg);
   color: inherit;
+  transition: background-color 120ms ease, border-color 120ms ease, box-shadow 120ms ease, transform 80ms ease;
 }
 
 com-native-menu {
@@ -12540,7 +12594,7 @@ select:focus-visible {
   max-height: 120px;
   overflow: hidden;
   text-wrap: auto;
-  border-radius: var(--spacing-medium);
+  border-radius: var(--radius-md);
   pointer-events: none;
 
   opacity: 0.8;
@@ -12584,7 +12638,7 @@ select:focus-visible {
   }
 
   #div_favicon {
-    border-radius: var(--spacing-small);
+    border-radius: var(--radius-sm);
     background-color: white;
     background-repeat: no-repeat;
     background-size: 16px 16px;
